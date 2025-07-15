@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IceShot</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      width: 220px;
+      margin: 0;
+      padding: 10px;
+      background: #1e1e1e;
+      color: white;
+    }
+
+    button {
+      background: #333;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 10px 12px;
+      margin: 6px 0;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #555;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #444;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Screenshot options -->
+  <button id="btnFull" title="Capture the entire page">Full Page</button>
+  <button id="btnVisible" title="Capture only the visible part">Visible Area</button>
+
+  <!-- Future tools -->
+  <button id="btnRegion" disabled title="Coming soon: drag-to-select area">Selection (Coming Soon)</button>
+  <hr />
+  <button id="btnOptions" disabled title="Settings will be added later">Settings (Coming Soon)</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Full Page Screenshot</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background: #1e1e2f;
+      color: #fff;
+    }
+
+    .header {
+      background: #2d2d3f;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    .header img {
+      height: 24px;
+      width: 24px;
+      margin-right: 10px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .main {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow: auto;
+    }
+
+    canvas {
+      max-width: 100%;
+      border: 1px solid #444;
+      background: #000;
+    }
+
+    .sidebar {
+      width: 280px;
+      background: #2a2a3b;
+      padding: 20px;
+      border-left: 1px solid #333;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #3c3c4e;
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      margin: 10px 0;
+      font-size: 14px;
+      border-radius: 6px;
+      width: 100%;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #57576f;
+    }
+
+    ul {
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .emoji {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icons/icon.png" alt="Logo">
+    <h1>IceShot</h1>
+  </div>
+
+  <div class="container">
+    <div class="main">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="sidebar">
+      <div class="sticky">
+        <h2>Actions</h2>
+        <button id="copyBtn"><span class="emoji">📋</span> Copy to Clipboard</button>
+        <button id="downloadBtn"><span class="emoji">💾</span> Download</button>
+        <button id="printBtn"><span class="emoji">🖨️</span> Print</button>
+        <hr style="margin: 20px 0; border-color: #444;" />
+        <h3 style="margin-top: 0;">Coming Soon:</h3>
+        <ul>
+          <li>Crop tool</li>
+          <li>Annotations</li>
+          <li>PDF Export</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="copypage.js"></script>
+</body>
+</html>
