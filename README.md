@@ -78,6 +78,23 @@ iceshot/
 - Love for doing things the hard way
 
 ---
+## 📸 IceShot Previews
+
+**Visible Screenshot (UI View):**  
+![Visible Screenshot](https://raw.githubusercontent.com/maddogg1991/IceShot/main/IceShot%20Previews/Screenshot%20from%202025-07-15%2005-52-48.png)
+
+**Visible Screenshot (Updated UI):**  
+![Visible Screenshot](https://raw.githubusercontent.com/maddogg1991/IceShot/main/IceShot%20Previews/Screenshot%20from%202025-07-15%2005-53-48.png)
+
+**Screenshot Mode Menu:**  
+![Menu Screenshot](https://raw.githubusercontent.com/maddogg1991/IceShot/main/IceShot%20Previews/Screenshot%20from%202025-07-15%2005-54-32.png)
+
+**Full Page Screenshot Example:**  
+![Full Page Screenshot](https://raw.githubusercontent.com/maddogg1991/IceShot/main/IceShot%20Previews/fullpage-screenshot.png)
+
+**Visible Area Screenshot Example:**  
+![Visible Area Screenshot](https://raw.githubusercontent.com/maddogg1991/IceShot/main/IceShot%20Previews/visible-screenshot(1).png)
+---
 
 ## 📬 Feedback / Ideas?
 
